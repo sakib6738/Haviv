@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>ইমেজ গ্যালারি</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-container {
+      max-width: 100%;
+      position: relative;
+      line-height: 0;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .play-icon::before {
+      content: '▶';
+      font-size: 28px;
+      color: white;
+      margin-left: 5px;
+    }
+
+    .live-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: red;
+      color: white;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- প্রথম ইমেজ -->
+  <div class="image-container">
+    <a href="https://ibb.co/BHgYCfDG" target="_blank">
+      <img src="https://i.ibb.co/DP7jR1XY/IMG-20250717-140747.jpg" alt="IMG-20250717-140747">
+    </a>
+  </div>
+
+  <!-- দ্বিতীয় ইমেজ: প্লে ও লাইভ আইকন সহ -->
+  <div class="image-container">
+    <a href="https://ibb.co/yBcHwtCK" target="_blank">
+      <img src="https://i.ibb.co/M5xFYrHK/Hot-Busty-Step-Daughter-was-Seduced-Fucked-Passionately-She-Loves-to-be-Sex-Doll-Intense-Orgasm-x-Ha.webp" alt="Play Image">
+      <div class="play-icon"></div>
+      <div class="live-badge">LIVE</div>
+    </a>
+  </div>
+
+  <!-- রেন্ডম ইমেজ -->
+  <div class="image-container">
+    <img src="https://placekitten.com/400/250" alt="Random Kitten Image">
+  </div>
+
+  <!-- শেষ ইমেজ -->
+  <div class="image-container">
+    <a href="https://ibb.co/LDsKYpPv" target="_blank">
+      <img src="https://i.ibb.co/9mdPcYvG/IMG-20250717-140814.jpg" alt="IMG-20250717-140814">
+    </a>
+  </div>
+
+</body>
+</html>
